@@ -75,7 +75,7 @@ pendulum.exe
 The current example uses:
 
 ```cpp
-Pendulum results2(7, 90, 60, 0.25);
+Pendulum results2(7, 2, 60, 0.25);
 ```
 
 which represents:
@@ -96,7 +96,6 @@ The `results/` directory is reserved for simulation output such as:
 
 ## Future Improvements
 
-- Convert input angles from degrees to radians automatically
 - Export trajectory data to CSV
 - Plot $\theta(t)$ and $\omega(t)$
 - Calculate and track mechanical energy
