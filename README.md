@@ -85,8 +85,6 @@ which represents:
 - Simulation time: `60` seconds
 - Time step: `0.25` seconds
 
-> **Note:** `sin()` in C++ expects radians, not degrees. The current example passes `90` directly, so `90` is interpreted as 90 radians. A future improvement is to explicitly convert an initial angle from degrees to radians.
-
 ## Results
 
 The `results/` directory is reserved for simulation output such as:
