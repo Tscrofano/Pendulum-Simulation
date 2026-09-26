@@ -42,8 +42,7 @@ $$
 Pendulum-Simulation/
 ├── main.cpp
 ├── README.md
-├── .gitignore
-└── results/
+└── .gitignore
 ```
 
 ## Requirements
@@ -82,7 +81,7 @@ Pendulum results2(7, 90, 60, 0.25);
 which represents:
 
 - Initial angular velocity: `7`
-- Initial angle: `90`
+- Initial angle: `2` radians
 - Simulation time: `60` seconds
 - Time step: `0.25` seconds
 
