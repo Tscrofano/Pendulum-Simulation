@@ -28,20 +28,17 @@ class Pendulum
 
     void simulate()
     {
-        int n_steps = t_max / delta_t + 1;
+        int n_steps = static_cast<int>(lround(t_max / delta_t)) + 1;
 
         trajectory.resize(n_steps, 2);
 
         trajectory(0, 0) = theta_initial;
         trajectory(0, 1) = velocity_initial;
-
-        double t = delta_t;
         
         for (int i = 1; t <= t_max; t += delta_t, i++)
         {
             double theta_prev    = trajectory(i-1, 0);
             double velocity_prev = trajectory(i-1, 1);
-            
             
             double velocity_new = velocity_prev - g/l * sin(theta_prev) * delta_t;
             double theta_new    = theta_prev + velocity_new * delta_t;
